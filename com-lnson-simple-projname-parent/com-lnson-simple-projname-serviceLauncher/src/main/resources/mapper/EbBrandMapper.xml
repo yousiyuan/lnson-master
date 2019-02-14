@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.EbBrandMapper">
+	<resultMap id="BaseResultMap" type="ebbrand">
+		<id column="BRAND_ID" jdbcType="DECIMAL" property="brandId" />
+		<result column="BRAND_NAME" jdbcType="VARCHAR" property="brandName" />
+		<result column="BRAND_DESC" jdbcType="VARCHAR" property="brandDesc" />
+		<result column="IMGS" jdbcType="VARCHAR" property="imgs" />
+		<result column="WEBSITE" jdbcType="VARCHAR" property="website" />
+		<result column="BRAND_SORT" jdbcType="DECIMAL" property="brandSort" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		BRAND_ID, BRAND_NAME, BRAND_DESC, IMGS, WEBSITE, BRAND_SORT
+	</sql>
+	<select id="selectByPrimaryKey" parameterType="java.lang.Long"
+		resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from EB_BRAND
+		where BRAND_ID = #{brandId,jdbcType=DECIMAL}
+	</select>
+	<select id="queryEbBrandListSelective" parameterType="ebbrand"
+		resultType="ebbrand">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM EB_BRAND
+		<where>
+			1 = 1
+			<if test="brandId != null">
+				AND BRAND_ID = #{brandId}
+			</if>
+			<if test="brandName != null">
+				AND BRAND_NAME = #{brandName}
+			</if>
+			<if test="brandDesc != null">
+				AND BRAND_DESC = #{brandDesc}
+			</if>
+			<if test="imgs != null">
+				AND IMGS LIKE '%${imgs}%'
+			</if>
+			<if test="website != null">
+				AND WEBSITE = #{website}
+			</if>
+			<if test="brandSort != null">
+				AND BRAND_SORT = #{brandSort}
+			</if>
+		</where>
+	</select>
+	<select id="count" resultType="int">
+		SELECT COUNT(1) FROM EB_BRAND
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		delete from EB_BRAND where BRAND_ID = #{brandId}
+	</delete>
+	<insert id="insert" parameterType="ebbrand">
+		<selectKey keyProperty="brandId" order="BEFORE" resultType="java.lang.Long">
+			SELECT SEQBRANDID.NEXTVAL FROM DUAL
+		</selectKey>
+		insert into EB_BRAND
+		(BRAND_ID,
+		BRAND_NAME,
+		BRAND_DESC,
+		IMGS,
+		WEBSITE,
+		BRAND_SORT)
+		values (#{brandId,jdbcType=DECIMAL},
+		#{brandName,jdbcType=VARCHAR},
+		#{brandDesc,jdbcType=VARCHAR},
+		#{imgs,jdbcType=VARCHAR},
+		#{website,jdbcType=VARCHAR},
+		#{brandSort,jdbcType=DECIMAL}
+		)
+	</insert>
+	<insert id="insertSelective" parameterType="ebbrand">
+		<selectKey keyProperty="brandId" order="BEFORE" resultType="java.lang.Long">
+			SELECT SEQBRANDID.NEXTVAL FROM DUAL
+		</selectKey>
+		insert into EB_BRAND
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			BRAND_ID,
+			<if test="brandName != null">
+				BRAND_NAME,
+			</if>
+			<if test="brandDesc != null">
+				BRAND_DESC,
+			</if>
+			<if test="imgs != null">
+				IMGS,
+			</if>
+			<if test="website != null">
+				WEBSITE,
+			</if>
+			<if test="brandSort != null">
+				BRAND_SORT,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			#{brandId,jdbcType=DECIMAL},
+			<if test="brandName != null">
+				#{brandName,jdbcType=VARCHAR},
+			</if>
+			<if test="brandDesc != null">
+				#{brandDesc,jdbcType=VARCHAR},
+			</if>
+			<if test="imgs != null">
+				#{imgs,jdbcType=VARCHAR},
+			</if>
+			<if test="website != null">
+				#{website,jdbcType=VARCHAR},
+			</if>
+			<if test="brandSort != null">
+				#{brandSort,jdbcType=DECIMAL},
+			</if>
+		</trim>
+	</insert>
+	<update id="updateByPrimaryKeySelective" parameterType="ebbrand">
+		update EB_BRAND
+		<set>
+			<if test="brandId != null">
+				BRAND_ID = #{brandId,jdbcType=DECIMAL},
+			</if>
+			<if test="brandName != null">
+				BRAND_NAME = #{brandName,jdbcType=VARCHAR},
+			</if>
+			<if test="brandDesc != null">
+				BRAND_DESC = #{brandDesc,jdbcType=VARCHAR},
+			</if>
+			<if test="imgs != null">
+				IMGS = #{imgs,jdbcType=VARCHAR},
+			</if>
+			<if test="website != null">
+				WEBSITE = #{website,jdbcType=VARCHAR},
+			</if>
+			<if test="brandSort != null">
+				BRAND_SORT = #{brandSort,jdbcType=DECIMAL},
+			</if>
+		</set>
+		where BRAND_ID = #{brandId,jdbcType=DECIMAL}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="ebbrand">
+		update EB_BRAND
+		set BRAND_NAME = #{brandName,jdbcType=VARCHAR},
+		BRAND_DESC =
+		#{brandDesc,jdbcType=VARCHAR},
+		IMGS = #{imgs,jdbcType=VARCHAR},
+		WEBSITE
+		= #{website,jdbcType=VARCHAR},
+		BRAND_SORT =
+		#{brandSort,jdbcType=DECIMAL}
+		where BRAND_ID =
+		#{brandId,jdbcType=DECIMAL}
+	</update>
+</mapper>

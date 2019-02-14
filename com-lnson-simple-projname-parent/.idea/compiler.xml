@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com-lnson-simple-projname-common" />
+        <module name="com-lnson-simple-projname-dao" />
+        <module name="com-lnson-simple-projname-dao-impl" />
+        <module name="com-lnson-simple-projname-entity" />
+        <module name="com-lnson-simple-projname-service" />
+        <module name="com-lnson-simple-projname-service-impl" />
+        <module name="com-lnson-simple-projname-serviceLauncher" />
+        <module name="com-lnson-simple-projname-web" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com-lnson-simple-projname-common" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar&quot;" />
+      <module name="com-lnson-simple-projname-dao" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar&quot;" />
+      <module name="com-lnson-simple-projname-dao-impl" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar&quot;" />
+      <module name="com-lnson-simple-projname-entity" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar&quot;" />
+      <module name="com-lnson-simple-projname-service" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar&quot;" />
+      <module name="com-lnson-simple-projname-service-impl" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar&quot;" />
+      <module name="com-lnson-simple-projname-serviceLauncher" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar&quot;" />
+      <module name="com-lnson-simple-projname-web" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar&quot;" />
+    </option>
+  </component>
+</project>

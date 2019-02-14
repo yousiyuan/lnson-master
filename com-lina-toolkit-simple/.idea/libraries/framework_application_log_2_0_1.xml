@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="framework-application-log-2.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/framework-application-log-2.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 配置JMS连接工厂 -->
+    <bean id="connectionFactory" class="org.apache.activemq.spring.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="${activemq.brokerURL}"/>
+        <!--安全认证账号-->
+        <property name="userName" value="${activemq.jaas.userName}"/>
+        <property name="password" value="${activemq.jaas.password}"/>
+    </bean>
+
+    <bean id="jmsFactory" class="org.apache.activemq.pool.PooledConnectionFactory" destroy-method="stop">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <property name="maxConnections" value="${jms.factory.maxConnections}"/>
+    </bean>
+
+    <bean id="cachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <property name="targetConnectionFactory" ref="jmsFactory"/>
+        <property name="sessionCacheSize" value="${jms.factory.sessionCacheSize}"/>
+    </bean>
+
+    <!-- 配置JMS模版 -->
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="cachingConnectionFactory" />
+        <property name="messageConverter">
+            <bean class="org.springframework.jms.support.converter.SimpleMessageConverter"/>
+        </property>
+
+        <!-- JmsTemplate默认将jms-config解析为Queue类型的Destination -->
+        <property name="pubSubDomain" value="${jms.template.pubSubDomain}"/>
+        <!-- 非事务 -->
+        <property name="sessionTransacted" value="${jms.template.sessionTransacted}"/>
+        <!-- deliveryMode, priority, timeToLive 的开关，要生效，必须配置为true，默认false -->
+        <property name="explicitQosEnabled" value="${jms.template.explicitQosEnabled}"/>
+        <!-- DeliveryMode.PERSISTENT=2(持久化) -->
+        <property name="deliveryMode" value="${jms.template.deliveryMode}"/>
+        <!-- Session.AUTO_ACKNOWLEDGE = 1(消息自动签收) -->
+        <property name="sessionAcknowledgeMode" value="${jms.template.sessionAcknowledgeMode}"/>
+    </bean>
+
+    <!-- 发送消息的队列 -->
+    <bean id="requestDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <!-- 设置消息队列名称 -->
+        <constructor-arg index="0" value="request-Queue"/>
+    </bean>
+
+    <!-- 接收应答消息的队列 -->
+    <bean id="responseDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <!-- 设置消息队列名称 -->
+        <constructor-arg index="0" value="response-Queue"/>
+    </bean>
+
+    <!-- 消息生产者 -->
+    <bean id="producer" class="com.lnson.simple.projname.jms.service.impl.JmsProducer">
+        <property name="jmsTemplate" ref="jmsTemplate"/>
+        <property name="requestDestination" ref="requestDestination"/>
+        <property name="responseDestination" ref="responseDestination"/>
+        <!--
+        <property name="jmsMessageHandler">
+            <bean class="com.lnson.simple.projname.jms.service.impl.DoProducerMessage"></bean>
+        </property>
+        -->
+    </bean>
+
+    <!-- 消息消费者 -->
+    <bean id="consumer" class="com.lnson.simple.projname.jms.service.impl.JmsConsumer">
+        <property name="jmsTemplate" ref="jmsTemplate"/>
+        <property name="jmsMessageHandler">
+            <bean class="com.lnson.simple.projname.jms.service.impl.DoConsumerMessage"></bean>
+        </property>
+    </bean>
+
+    <!-- 消息监听容器 -->
+    <bean id="jmsContainerRequest" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="cachingConnectionFactory"/>
+        <property name="destination" ref="requestDestination"/>
+        <property name="messageListener" ref="consumer"/>
+        <property name="sessionTransacted" value="${jms.message.listener.sessionTransacted}"/>
+        <property name="acceptMessagesWhileStopping" value="${jms.message.listener.acceptMessagesWhileStopping}"/>
+    </bean>
+
+<!-- 应答消息监听容器
+    <bean id="jmsContainerReply" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="cachingConnectionFactory"/>
+        <property name="destination" ref="responseDestination"/>
+        <property name="messageListener" ref="producer"/>
+        <property name="sessionTransacted" value="${jms.message.listener.sessionTransacted}"/>
+        <property name="acceptMessagesWhileStopping" value="${jms.message.listener.acceptMessagesWhileStopping}"/>
+    </bean>
+ -->
+</beans>

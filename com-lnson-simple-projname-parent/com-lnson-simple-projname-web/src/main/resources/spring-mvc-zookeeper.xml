@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--zookeeper统一配置中心-->
+    <util:properties id="configToolkitProp" location="classpath:properties/zkconfig.properties"/>
+
+    <!--当当网config toolkit使用请参考https://blog.csdn.net/qq_34021712/article/details/78679850-->
+    <bean id="dubboProfile" class="com.dangdang.config.service.zookeeper.ZookeeperConfigProfile">
+        <constructor-arg name="connectStr" value="#{configToolkitProp['config.center.connectStr']}" />
+        <constructor-arg name="rootNode" value="#{configToolkitProp['config.center.rootNode.common']}" />
+        <constructor-arg name="version" value="#{configToolkitProp['config.center.version']}" />
+    </bean>
+    <bean id="activemqProfile" class="com.dangdang.config.service.zookeeper.ZookeeperConfigProfile">
+        <constructor-arg name="connectStr" value="#{configToolkitProp['config.center.connectStr']}" />
+        <constructor-arg name="rootNode" value="#{configToolkitProp['config.center.rootNode.common']}" />
+        <constructor-arg name="version" value="#{configToolkitProp['config.center.version']}" />
+    </bean>
+    <bean id="redisProfile" class="com.dangdang.config.service.zookeeper.ZookeeperConfigProfile">
+        <constructor-arg name="connectStr" value="#{configToolkitProp['config.center.connectStr']}" />
+        <constructor-arg name="rootNode" value="#{configToolkitProp['config.center.rootNode.common']}" />
+        <constructor-arg name="version" value="#{configToolkitProp['config.center.version']}" />
+    </bean>
+
+    <bean id="configGroupSources" class="com.dangdang.config.service.support.spring.ConfigGroupSourceFactory" factory-method="create">
+        <constructor-arg name="configGroups">
+            <list>
+                <bean class="com.dangdang.config.service.zookeeper.ZookeeperConfigGroup" c:configProfile-ref="dubboProfile" c:node="dubbo"/>
+                <bean class="com.dangdang.config.service.zookeeper.ZookeeperConfigGroup" c:configProfile-ref="activemqProfile" c:node="activemq"/>
+                <bean class="com.dangdang.config.service.zookeeper.ZookeeperConfigGroup" c:configProfile-ref="redisProfile" c:node="redis"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!-- 关于 PropertySourcesPlaceholderConfigurer 预了解更多，请参考 https://blog.csdn.net/xczzmn/article/details/77744627 -->
+    <bean id="customizedPropertyConfigurer" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="order" value="1" />
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="propertySources" ref="configGroupSources" />
+    </bean>
+
+</beans>

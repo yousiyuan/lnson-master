@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>com-lnson-simple-projname-parent</artifactId>
+        <groupId>com.lnson.simple.projname.parent</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>com-lnson-simple-projname-serviceLauncher</artifactId>
+
+    <name>com-lnson-simple-projname-serviceLauncher</name>
+    <url>http://www.example.com</url>
+    <description>dubbo服务启动</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!--项目组件-->
+        <dependency>
+            <artifactId>com-lnson-simple-projname-common</artifactId>
+            <groupId>com.lnson.simple.projname.parent</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>com-lnson-simple-projname-entity</artifactId>
+            <groupId>com.lnson.simple.projname.parent</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>com-lnson-simple-projname-dao</artifactId>
+            <groupId>com.lnson.simple.projname.parent</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>com-lnson-simple-projname-dao-impl</artifactId>
+            <groupId>com.lnson.simple.projname.parent</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>com-lnson-simple-projname-service</artifactId>
+            <groupId>com.lnson.simple.projname.parent</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <artifactId>com-lnson-simple-projname-service-impl</artifactId>
+            <groupId>com.lnson.simple.projname.parent</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--单元测试组件-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- zookeeper统一配置管理 -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+        </dependency>
+
+        <!-- 使用当当网的Config Toolkit集中管理分布式集群的配置数据 -->
+        <dependency>
+            <groupId>com.dangdang</groupId>
+            <artifactId>config-toolkit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <!--dubbo服务依赖包-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!--打成jar的名称-->
+        <finalName>com-lnson-simple-projname-serviceLauncher</finalName>
+        <resources>
+            <resource>
+                <targetPath>${project.build.directory}/classes</targetPath>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+
+            <!-- 结合com.alibaba.dubbo.container.Main,因为dubbo自带的Main需要读取classes/META-INF/spring下的spring配置信息 -->
+            <resource>
+                <targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <!--将spring相关的配置文件拷贝到classes/META-INF/spring下 -->
+                    <include>spring-zookeeper.xml</include>
+                    <include>spring-beans.xml</include>
+                    <include>spring-activemq.xml</include>
+                    <include>spring-redis.xml</include>
+                    <include>spring-dubbo-provider.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <!-- 配置manifest文件，以及服务jar的启动类 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <classesDirectory>target/classes/</classesDirectory>
+                    <archive>
+                        <manifest>
+                            <!--执行Jar文件的启动类,使用dubbo自带的启动类 -->
+                            <mainClass>com.alibaba.dubbo.container.Main</mainClass>
+                            <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
+                            <useUniqueVersions>false</useUniqueVersions>
+                            <addClasspath>true</addClasspath>
+                            <!--将服务依赖的jar文件，放到lib文件夹下 -->
+                            <classpathPrefix>lib/</classpathPrefix>
+                        </manifest>
+                        <manifestEntries>
+                            <Class-Path>.</Class-Path>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!-- 将运行服务的jar文件，依赖的其它jar文件放在lib文件夹下 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <type>jar</type>
+                            <includeTypes>jar</includeTypes>
+                            <outputDirectory>
+                                ${project.build.directory}/lib
+                            </outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

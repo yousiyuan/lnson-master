@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="com-lnson-simple-projname-web:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fcc7eaee-70fb-449f-bf06-c875d3f6101b" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/com-lnson-simple-projname-common/target/" />
+    <ignored path="$PROJECT_DIR$/com-lnson-simple-projname-dao/target/" />
+    <ignored path="$PROJECT_DIR$/com-lnson-simple-projname-dao-impl/target/" />
+    <ignored path="$PROJECT_DIR$/com-lnson-simple-projname-entity/target/" />
+    <ignored path="$PROJECT_DIR$/com-lnson-simple-projname-service/target/" />
+    <ignored path="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/target/" />
+    <ignored path="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/target/" />
+    <ignored path="$PROJECT_DIR$/com-lnson-simple-projname-web/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="com-lnson-simple-projname-parent" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mvc</find>
+      <find>com.lnson.projname.entity.EbBrand</find>
+      <find>log4j-slf4j-impl</find>
+      <find>com.lnson.simple.projname.parent</find>
+      <find>spring</find>
+      <find>--&gt;</find>
+      <find>propertySourceList</find>
+      <find>RedisCacheManager</find>
+      <find>ShardedJedis</find>
+      <find>port</find>
+      <find>jedis</find>
+      <find>redisClient</find>
+      <find>logger.info(</find>
+      <find>$</find>
+      <find>${</find>
+      <find>usePool</find>
+      <find>shardedJedis</find>
+      <find>==</find>
+      <find>activemq.version</find>
+      <find>extends</find>
+      <find>MapMessage</find>
+      <find>responseDestination</find>
+      <find>requestDestination</find>
+      <find>setJMSReplyTo</find>
+      <find>message</find>
+      <find>connectionFactory</find>
+      <find>&lt;version&gt;</find>
+      <find>springmvc</find>
+      <find>btnAjaxRequestKVTest</find>
+      <find>btnAjaxRequestTest</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>shardedJedis</replace>
+      <replace>System.out.println(</replace>
+      <replace>getShardedJedis()</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/java/com/lnson/simple/projname/serviceLauncher/ServiceLauncher.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/mybatis.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-dao-impl/src/main/java/com/lnson/simple/projname/dao/impl/EbBrandDaoImpl.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/service/impl/EbBrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-beans.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/EbBrandServiceTest.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-zookeeper.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/caching/service/ShardedJedisService.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/caching/service/CacheService.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-entity/src/main/java/com/lnson/simple/projname/caching/entity/FootballTeam.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-entity/src/main/java/com/lnson/simple/projname/caching/entity/TeamMember.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/RedisTest.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/caching/service/impl/CacheServiceImpl.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/caching/service/impl/ShardedJedisServiceImpl.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/ShardedJedisServiceTest.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-redis.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/CacheServiceTest.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-dubbo-provider.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-dubbo-consumer.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-activemq.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/jms/service/JmsConsumerService.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/jms/service/JmsProducerService.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/jms/service/IJmsProducer.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/jms/service/IJmsConsumer.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/jms/service/IJmsResponse.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/jms/service/IJmsMessageHandler.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/jms/service/impl/JmsConsumer.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-dao-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/pom.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/jms/service/impl/JmsProducer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service/pom.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/jms/service/impl/DoConsumerMessage.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/jms/service/impl/DoProducerMessage.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/JmsMessageTest.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-jms.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/spring-mvc-zookeeper.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/spring-mvc-beans.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/java/com/lnson/simple/projname/web/controller/EbItemController.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/pom.xml" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/ZookeeperTest.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/test/java/com/lnson/simple/projname/web/test/ZookeeperTest.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-entity/src/main/java/com/lnson/simple/projname/entity/EbBrand.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/test/java/com/lnson/simple/projname/web/test/EbBrandServiceTest.java" />
+        <option value="$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/java/com/lnson/simple/projname/web/api/WebApiController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/javawebhost/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="C:\javawebhost\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="12" />
+    <option name="y" value="10" />
+    <option name="width" value="1886" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="com-lnson-simple-projname-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-lnson-simple-projname-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-lnson-simple-projname-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-lnson-simple-projname-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="com-lnson-simple-projname-serviceLauncher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-lnson-simple-projname-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-lnson-simple-projname-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="com-lnson-simple-projname-serviceLauncher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-lnson-simple-projname-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-lnson-simple-projname-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="com-lnson-simple-projname-serviceLauncher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-lnson-simple-projname-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com-lnson-simple-projname-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="com-lnson-simple-projname-serviceLauncher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550136626117" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LNSON_PROJECT/com-lnson-projname-parent" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\SIMPLE_PROJECT\com-lnson-simple-projname-parent\com-lnson-simple-projname-serviceLauncher\src\main\resources" />
+      <recent name="C:\Users\Administrator\IdeaProjects\SIMPLE_PROJECT\com-lnson-simple-projname-parent\com-lnson-simple-projname-serviceLauncher\src\main\resources\properties" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lnson.simple.projname.web.test" />
+      <recent name="com.lnson.simple.projname.web.controller" />
+      <recent name="com.lnson.simple.projname.web.api" />
+      <recent name="com.lnson.simple.projname.dao.impl" />
+      <recent name="com.lnson.simple.projname.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\SIMPLE_PROJECT\com-lnson-simple-projname-parent\com-lnson-simple-projname-web\src\main\resources" />
+      <recent name="C:\Users\Administrator\IdeaProjects\SIMPLE_PROJECT\com-lnson-simple-projname-parent\com-lnson-simple-projname-web\src\main\resources\properties" />
+      <recent name="C:\Users\Administrator\IdeaProjects\SIMPLE_PROJECT\com-lnson-simple-projname-parent\com-lnson-simple-projname-serviceLauncher\src\main\resources\mapper" />
+      <recent name="C:\Users\Administrator\IdeaProjects\SIMPLE_PROJECT\com-lnson-simple-projname-parent\com-lnson-simple-projname-serviceLauncher\src\main\resources" />
+      <recent name="C:\Users\Administrator\IdeaProjects\SIMPLE_PROJECT\com-lnson-simple-projname-parent\com-lnson-simple-projname-serviceLauncher\src\main\resources\properties" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ServiceLauncher">
+    <configuration name="ServiceLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lnson.simple.projname.serviceLauncher.ServiceLauncher" />
+      <module name="com-lnson-simple-projname-serviceLauncher" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lnson.simple.projname.serviceLauncher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EbBrandServiceTest.deleteObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-lnson-simple-projname-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lnson.simple.projname.web.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lnson.simple.projname.web.test" />
+      <option name="MAIN_CLASS_NAME" value="com.lnson.simple.projname.web.test.EbBrandServiceTest" />
+      <option name="METHOD_NAME" value="deleteObjectTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EbBrandServiceTest.insertObjectTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-lnson-simple-projname-serviceLauncher" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lnson.simple.projname.serviceLauncher.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lnson.simple.projname.serviceLauncher.test" />
+      <option name="MAIN_CLASS_NAME" value="com.lnson.simple.projname.serviceLauncher.test.EbBrandServiceTest" />
+      <option name="METHOD_NAME" value="insertObjectTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EbBrandServiceTest.insertObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-lnson-simple-projname-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lnson.simple.projname.web.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lnson.simple.projname.web.test" />
+      <option name="MAIN_CLASS_NAME" value="com.lnson.simple.projname.web.test.EbBrandServiceTest" />
+      <option name="METHOD_NAME" value="insertObjectTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EbBrandServiceTest.updateObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com-lnson-simple-projname-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lnson.simple.projname.web.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lnson.simple.projname.web.test" />
+      <option name="MAIN_CLASS_NAME" value="com.lnson.simple.projname.web.test.EbBrandServiceTest" />
+      <option name="METHOD_NAME" value="updateObjectTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat9.0.0.M26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M26" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files\Java\jdk1.8.0_162\jre">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/lnsonweb/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="com-lnson-simple-projname-web:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/lnsonweb" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Default_(Template)_Project" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2788" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="com-lnson-simple-projname-web:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_Default_(Template)_Project" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2788" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ServiceLauncher" />
+      <item itemvalue="JUnit.EbBrandServiceTest.insertObjectTest" />
+      <item itemvalue="JUnit.EbBrandServiceTest.updateObjectTest" />
+      <item itemvalue="JUnit.EbBrandServiceTest.deleteObjectTest" />
+      <item itemvalue="JUnit.EbBrandServiceTest.insertObjectTest (1)" />
+      <item itemvalue="Tomcat Server.Tomcat9.0.0.M26" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ServiceLauncher" />
+        <item itemvalue="JUnit.EbBrandServiceTest.insertObjectTest" />
+        <item itemvalue="JUnit.EbBrandServiceTest.insertObjectTest (1)" />
+        <item itemvalue="JUnit.EbBrandServiceTest.deleteObjectTest" />
+        <item itemvalue="JUnit.EbBrandServiceTest.updateObjectTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcc7eaee-70fb-449f-bf06-c875d3f6101b" name="Default Changelist" comment="" />
+      <created>1549854576463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549854576463</updated>
+      <workItem from="1549854577762" duration="56035000" />
+      <workItem from="1549976350427" duration="56192000" />
+      <workItem from="1550073120044" duration="27930000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="EbBrandServiceTest_insertObjectTest - 2019.02.14 at 15h 15m 16s.xml">
+      <configuration name="EbBrandServiceTest.insertObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_insertObjectTest - 2019.02.14 at 16h 06m 55s.xml">
+      <configuration name="EbBrandServiceTest.insertObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_updateObjectTest - 2019.02.14 at 16h 09m 55s.xml">
+      <configuration name="EbBrandServiceTest.updateObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_deleteObjectTest - 2019.02.14 at 16h 11m 03s.xml">
+      <configuration name="EbBrandServiceTest.deleteObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_insertObjectTest - 2019.02.14 at 16h 12m 48s.xml">
+      <configuration name="EbBrandServiceTest.insertObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_insertObjectTest - 2019.02.14 at 16h 14m 26s.xml">
+      <configuration name="EbBrandServiceTest.insertObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_insertObjectTest_(1) - 2019.02.14 at 16h 14m 57s.xml">
+      <configuration name="EbBrandServiceTest.insertObjectTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_insertObjectTest - 2019.02.14 at 16h 17m 39s.xml">
+      <configuration name="EbBrandServiceTest.insertObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_insertObjectTest - 2019.02.14 at 16h 23m 01s.xml">
+      <configuration name="EbBrandServiceTest.insertObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EbBrandServiceTest_insertObjectTest - 2019.02.14 at 16h 33m 09s.xml">
+      <configuration name="EbBrandServiceTest.insertObjectTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="140157000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="12" y="10" width="1886" height="1032" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983315" visible="true" weight="0.25520262" />
+      <window_info id="Structure" order="1" sideWeight="0.5016685" side_tool="true" weight="0.2524644" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5016685" side_tool="true" weight="0.2524644" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20244716" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2925473" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.30589545" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.23603505" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983315" visible="true" weight="0.25520262" />
+      <window_info id="Structure" order="1" sideWeight="0.5016685" side_tool="true" weight="0.2524644" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5016685" side_tool="true" weight="0.2524644" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2458287" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2925473" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.30589545" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.23603505" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.15.8/activemq-all-5.15.8.jar!/META-INF/maven/log4j/log4j/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.15.8/activemq-all-5.15.8.jar!/META-INF/maven/org.slf4j/slf4j-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-dao-impl/src/main/java/com/lnson/simple/projname/dao/impl/BaseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.lnson.simple.projname.serviceLauncher.test.JmsMessageTest">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.lnson.simple.projname.serviceLauncher.test.JmsMessageTest</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.test.context.ContextConfiguration</node>
+            <node x="" y="">org.junit.runner.RunWith</node>
+            <node x="" y="">com.lnson.simple.projname.serviceLauncher.test.JmsMessageTest</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="143.5" y="56.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.lnson.simple.projname.parent:com-lnson-simple-projname-serviceLauncher:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.lnson.simple.projname.parent:com-lnson-simple-projname-serviceLauncher:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-serviceLauncher:1.0-SNAPSHOT</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.poi:poi:jar:3.17</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.poi:poi:jar:3.17/commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.poi:poi:jar:3.17/org.apache.commons:commons-collections4:jar:4.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.poi:poi-ooxml:jar:3.17</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.poi:poi-ooxml:jar:3.17/com.github.virtuald:curvesapi:jar:1.04</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.poi:poi-ooxml-schemas:jar:3.17</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.poi:poi-scratchpad:jar:3.17</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.xmlbeans:xmlbeans:jar:2.6.0</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-common:jar:1.0-SNAPSHOT/org.apache.xmlbeans:xmlbeans:jar:2.6.0/stax:stax-api:jar:1.0.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-entity:jar:1.0-SNAPSHOT</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-entity:jar:1.0-SNAPSHOT/com.alibaba:fastjson:jar:1.2.47</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao:jar:1.0-SNAPSHOT</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-aop:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-aspects:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-aspects:jar:4.3.22.RELEASE/org.aspectj:aspectjweaver:jar:1.8.9</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-beans:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-context:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-core:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-core:jar:4.3.22.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-expression:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-jdbc:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-test:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-tx:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-web:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.springframework:spring-webmvc:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.mybatis:mybatis:jar:3.4.6</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/net.sf.ehcache:ehcache-core:jar:2.6.11</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.mybatis.caches:mybatis-ehcache:jar:1.1.0</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/com.mchange:mchange-commons-java:jar:0.2.15</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.mybatis:mybatis-spring:jar:1.3.2</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/mysql:mysql-connector-java:jar:8.0.11</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/mysql:mysql-connector-java:jar:8.0.11/com.google.protobuf:protobuf-java:jar:2.6.0</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/com.oracle:ojdbc6:jar:6</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/com.mchange:c3p0:jar:0.9.5.2</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/c3p0:c3p0-oracle-thin-extras:jar:0.9.0.2</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/com.alibaba:druid:jar:1.1.10</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/cglib:cglib:jar:3.2.5</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/cglib:cglib:jar:3.2.5/org.ow2.asm:asm:jar:5.2</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/cglib:cglib:jar:3.2.5/org.apache.ant:ant:jar:1.9.6</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/cglib:cglib:jar:3.2.5/org.apache.ant:ant:jar:1.9.6/org.apache.ant:ant-launcher:jar:1.9.6</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.javassist:javassist:jar:3.22.0-GA</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.aopalliance:com.springsource.org.aopalliance:jar:1.0.0</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.commons:com.springsource.org.apache.commons.fileupload:jar:1.2.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.commons:com.springsource.org.apache.commons.io:jar:1.4.0</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.commons:com.springsource.org.apache.commons.logging:jar:1.1.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.log4j:com.springsource.org.apache.log4j:jar:1.2.16</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.aspectj:com.springsource.org.aspectj.weaver:jar:1.6.4.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.logging.log4j:log4j-api:jar:2.9.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.logging.log4j:log4j-core:jar:2.9.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.apache.logging.log4j:log4j-web:jar:2.9.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-dao-impl:jar:1.0-SNAPSHOT/org.slf4j:slf4j-log4j12:jar:1.7.25</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/redis.clients:jedis:jar:2.9.0</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.2</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.7.2.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.7.2.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.1.2.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.7.2.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.1.2.RELEASE/org.springframework.data:spring-data-commons:jar:1.12.2.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.7.2.RELEASE/org.springframework:spring-oxm:jar:4.2.6.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.7.2.RELEASE/org.springframework:spring-context-support:jar:4.2.6.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.7.2.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.21</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.apache.activemq:activemq-pool:jar:5.15.8</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.apache.activemq:activemq-pool:jar:5.15.8/org.apache.activemq:activemq-jms-pool:jar:5.15.8</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.apache.activemq:activemq-pool:jar:5.15.8/org.apache.activemq:activemq-jms-pool:jar:5.15.8/org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.apache.activemq:activemq-pool:jar:5.15.8/org.apache.activemq:activemq-client:jar:5.15.8</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.apache.activemq:activemq-pool:jar:5.15.8/org.apache.activemq:activemq-client:jar:5.15.8/org.fusesource.hawtbuf:hawtbuf:jar:1.11</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.apache.activemq:activemq-pool:jar:5.15.8/org.apache.activemq:activemq-client:jar:5.15.8/org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:jar:1.0.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.apache.activemq:activemq-pool:jar:5.15.8/org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:jar:1.0.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.apache.activemq:activemq-all:jar:5.15.8</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/javax.jms:javax.jms-api:jar:2.0.1</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.springframework:spring-jms:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service:jar:1.0-SNAPSHOT/org.springframework:spring-jms:jar:4.3.22.RELEASE/org.springframework:spring-messaging:jar:4.3.22.RELEASE</node>
+            <node x="" y="">com.lnson.simple.projname.parent:com-lnson-simple-projname-service-impl:jar:1.0-SNAPSHOT</node>
+            <node x="" y="">junit:junit:jar:4.12</node>
+            <node x="" y="">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.10</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.10/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.10/jline:jline:jar:0.9.94</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.10/io.netty:netty:jar:3.10.5.Final</node>
+            <node x="" y="">com.dangdang:config-toolkit:jar:3.3.0-RELEASE</node>
+            <node x="" y="">com.dangdang:config-toolkit:jar:3.3.0-RELEASE/org.apache.curator:curator-framework:jar:4.0.1</node>
+            <node x="" y="">com.dangdang:config-toolkit:jar:3.3.0-RELEASE/org.apache.curator:curator-framework:jar:4.0.1/org.apache.curator:curator-client:jar:4.0.1</node>
+            <node x="" y="">com.google.guava:guava:jar:17.0</node>
+            <node x="" y="">com.alibaba:dubbo:jar:2.6.2</node>
+            <node x="" y="">com.alibaba:dubbo:jar:2.6.2/org.jboss.netty:netty:jar:3.2.5.Final</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="1231.0" y="402.0" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-dao-impl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="187" column="8" selection-start-line="187" selection-start-column="8" selection-end-line="187" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service/src/main/java/com/lnson/simple/projname/jms/service/IJmsMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/caching/service/impl/CacheServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2532#2533#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/caching/service/impl/ShardedJedisServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/CacheServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/ShardedJedisServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2385">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getFootballTeam#0;class#ShardedJedisServiceTest#0" />
+            <element signature="method#getTeamMember#0;class#ShardedJedisServiceTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/jms/service/impl/DoConsumerMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/jms/service/impl/DoProducerMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-jms.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="983">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/jms/service/impl/JmsProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#sendMessage#0;class#JmsProducer#0" />
+            <element signature="method#onMessage#0;class#JmsProducer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/jms/service/impl/JmsConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/JmsMessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/properties/zkconfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/spring-zookeeper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="68" lean-forward="true" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/spring-mvc-zookeeper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="97" lean-forward="true" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/spring-mvc-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/ZookeeperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/test/java/com/lnson/simple/projname/web/test/ZookeeperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="344" column="25" selection-start-line="344" selection-start-column="25" selection-end-line="351" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.2/dubbo-2.6.2.jar!/META-INF/compat/dubbo.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/resources/spring-dubbo-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/java/com/lnson/simple/projname/serviceLauncher/ServiceLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/test/java/com/lnson/simple/projname/serviceLauncher/test/EbBrandServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Comparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="94" column="3" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="52" column="3" lean-forward="true" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="168" column="31" lean-forward="true" selection-start-line="168" selection-start-column="31" selection-end-line="168" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-entity/src/main/java/com/lnson/simple/projname/entity/EbBrand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/service/impl/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-service-impl/src/main/java/com/lnson/simple/projname/service/impl/EbBrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/test/java/com/lnson/simple/projname/web/test/EbBrandServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-serviceLauncher/src/main/resources/mapper/EbBrandMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/java/com/lnson/simple/projname/web/controller/EbItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3075">
+          <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/java/com/lnson/simple/projname/web/api/WebApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com-lnson-simple-projname-web/src/main/webapp/VIEWS/api.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>com-lnson-simple-projname-web:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>com-lnson-simple-projname-service</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean install -Dmaven.test.skip=true" />
+    <option value="clean package -Dmaven.test.skip=true" />
+    <option value="clean" />
+    <option value="dependency:tree -Dverbose" />
+    <option value="-U dependency:tree -Dverbose" />
+  </component>
+</project>

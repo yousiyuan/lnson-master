@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--注解扫描-->
+    <context:component-scan base-package="com.lnson.simple.projname.caching.service"/>
+
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!--在指定时刻通过pool能够获取到的最大的连接的jedis个数-->
+        <property name="maxTotal" value="${redis.pool.maxTotal}"/>
+        <!--最大能够保持idle的数量，控制一个pool最多有多少个状态为idle的jedis实例-->
+        <property name="maxIdle" value="${redis.pool.maxIdle}"/>
+        <!--在容器中的最小的闲置连接数-->
+        <property name="minIdle" value="${redis.pool.minIdle}"/>
+        <!--当连接池内的连接耗尽时，getBlockWhenExhausted为true时，连接会阻塞，超过了阻塞的时间（设定的maxWaitMillis，单位毫秒）时会报错-->
+        <property name="maxWaitMillis" value="${redis.pool.maxWaitMillis}"/>
+        <!--逐出连接的最小空闲时间 默认1800000毫秒(30分钟)-->
+        <property name="minEvictableIdleTimeMillis" value="${redis.pool.minEvictableIdleTimeMillis}"/>
+        <!--每次逐出检查时 逐出的最大数目 如果为负数就是 : 1/abs(n), 默认3-->
+        <property name="numTestsPerEvictionRun" value="${redis.pool.numTestsPerEvictionRun}"/>
+        <!--在容器中的最小的闲置连接数，仅仅在此值为正数且timeBetweenEvictionRunsMillis值大于0时有效-->
+        <property name="timeBetweenEvictionRunsMillis" value="${redis.pool.timeBetweenEvictionRunsMillis}"/>
+        <!--在borrow一个jedis实例时，是否提前进行validate操作；如果为true，则得到的jedis实例均是可用的；默认是false-->
+        <property name="testOnBorrow" value="${redis.pool.testOnBorrow}"/>
+        <!--在return给pool时，是否提前进行validate操作-->
+        <property name="testOnReturn" value="${redis.pool.testOnReturn}"/>
+        <!--在空闲时检查有效性，默认false；默认是false-->
+        <property name="testWhileIdle" value="${redis.pool.testWhileIdle}"/>
+    </bean>
+
+    <!-- ShardedJedisPool是基于一致性哈希算法实现的分布式jedis池，将部署的redis-server(一个或多个)和存数据的key映射到同一地址空间，从而动态添加或减少redisServer
+     预了解更多请参考:
+     https://blog.csdn.net/chinabestchina/article/details/75208011
+     https://www.cnblogs.com/red-code/p/6657517.html -->
+    <bean id="shardedJedisPool" class="redis.clients.jedis.ShardedJedisPool">
+        <constructor-arg index="0" ref="jedisPoolConfig"/>
+        <constructor-arg index="1">
+            <list>
+                <bean class="redis.clients.jedis.JedisShardInfo">
+                    <constructor-arg name="host" value="${redis.conn.hostName}"/>
+                    <constructor-arg name="port" value="${redis.conn.port}"/>
+                </bean>
+                <!--<bean class="redis.clients.jedis.JedisShardInfo">
+                    <constructor-arg name="host" value="${redis.conn.hostName}"/>
+                    <constructor-arg name="port" value="6380"/>
+                </bean>
+                <bean class="redis.clients.jedis.JedisShardInfo">
+                    <constructor-arg name="host" value="${redis.conn.hostName}"/>
+                    <constructor-arg name="port" value="6381"/>
+                </bean>
+                <bean class="redis.clients.jedis.JedisShardInfo">
+                    <constructor-arg name="host" value="${redis.conn.hostName}"/>
+                    <constructor-arg name="port" value="6382"/>
+                </bean>
+                <bean class="redis.clients.jedis.JedisShardInfo">
+                    <constructor-arg name="host" value="${redis.conn.hostName}"/>
+                    <constructor-arg name="port" value="6383"/>
+                </bean>
+                <bean class="redis.clients.jedis.JedisShardInfo">
+                    <constructor-arg name="host" value="${redis.conn.hostName}"/>
+                    <constructor-arg name="port" value="6384"/>
+                </bean>-->
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!--p表示对该bean里面的属性进行注入，格式为p:属性名=注入的对象 效果与在bean里面使用<property>标签一样-->
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" destroy-method="destroy">
+        <property name="hostName" value="${redis.conn.hostName}"/>
+        <property name="port" value="${redis.conn.port}"/>
+        <property name="timeout" value="${redis.conn.timeout}"/>
+        <property name="database" value="${redis.conn.database}"/>
+        <!--<property name="password" value="${redis.conn.password}"/>-->
+        <property name="usePool" value="${redis.conn.usePool}"/>
+        <property name="poolConfig" ref="jedisPoolConfig"/>
+    </bean>
+
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate" p:connection-factory-ref="jedisConnectionFactory">
+        <!-- 序列化方式 建议key/hashKey采用StringRedisSerializer。 -->
+        <property name="keySerializer" ref ="stringRedisSerializer"/>
+        <property name="hashKeySerializer" ref ="stringRedisSerializer"/>
+        <property name="valueSerializer" ref ="stringRedisSerializer"/>
+        <property name="hashValueSerializer" ref ="stringRedisSerializer"/>
+    </bean>
+
+    <bean id="stringRedisSerializer" class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
+
+    <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate" p:connection-factory-ref="jedisConnectionFactory"/>
+
+    <!-- 在需要缓存的地方注入此类 -->
+    <bean id="redisrCacheManager" class="org.springframework.data.redis.cache.RedisCacheManager">
+        <constructor-arg index="0" ref="redisTemplate"/>
+    </bean>
+
+</beans>

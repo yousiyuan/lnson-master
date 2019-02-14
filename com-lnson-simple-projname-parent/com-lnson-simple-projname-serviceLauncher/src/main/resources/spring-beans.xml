@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--注解扫描-->
+    <context:component-scan base-package="com.lnson.simple.projname.dao.impl,com.lnson.simple.projname.service.impl"/>
+
+    <!-- Spring与MyBatis整合 -->
+    <context:property-placeholder location="classpath:properties/db.properties" />
+    <bean id="oracleDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driverClass}"/>
+        <property name="url" value="${jdbc.jdbcUrl}"/>
+        <property name="username" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="oracleDataSource"/>
+        <property name="configLocation" value="classpath:mybatis.xml"/>
+    </bean>
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <!-- 定义事务的管理器 -->
+    <tx:annotation-driven transaction-manager="txManager" />
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="oracleDataSource"/>
+    </bean>
+
+    <!-- 通知配置 -->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <!-- 具体的方法的配置 -->
+            <tx:method name="insert*" propagation="REQUIRED" />
+            <tx:method name="update*" propagation="REQUIRED" />
+            <tx:method name="delete*" propagation="REQUIRED" />
+            <tx:method name="query*" read-only="true" />
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 切面配置 -->
+    <aop:config>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.lnson.simple.projname.service..*.*(..))" />
+    </aop:config>
+
+</beans>

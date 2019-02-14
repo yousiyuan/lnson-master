@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- MyBatis全局设置 -->
+    <settings>
+        <!-- 全局的对mapper进行缓存属性的配置 -->
+        <setting name="cacheEnabled" value="true" />
+        <!-- 全局设置是否延迟加载，否的话，在服务启动的时候，自动加载所有的mapper -->
+        <setting name="lazyLoadingEnabled" value="true" />
+        <!-- 启用的时候，将会加载对象的所有懒属性，否则，按需加载 -->
+        <setting name="aggressiveLazyLoading" value="false" />
+        <!-- 允许用label替代name，不同的数据库驱动在这方面都不同 -->
+        <setting name="useColumnLabel" value="true" />
+        <!-- 启用下划线与驼峰式命名规则进行字段映射 -->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="com.lnson.simple.projname.entity.EbBrand" alias="ebbrand" />
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="mapper/EbBrandMapper.xml" />
+    </mappers>
+
+    <!-- 插件配置
+    <plugins>
+        <plugin interceptor="cn.springmvc.mybatis.common.base.pagination.PageInterceptor">
+            <property name="dialect" value="mysql" />
+            <property name="pageSqlId" value=".*Page$" />
+        </plugin>
+    </plugins>
+     -->
+
+</configuration>

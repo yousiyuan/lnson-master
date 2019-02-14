@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--提供方应用信息，用于计算依赖关系-->
+    <dubbo:application name="consumer-lnson-simple-projname-service"/>
+
+    <!--使用zookeeper作为dubbo服务的发布注册中心-->
+    <!--开发环境注册中心-->
+    <dubbo:registry id="development-dubbo" address="zookeeper://${dubbo.registry.development}"/>
+    <!--测试环境注册中心-->
+    <dubbo:registry id="test-dubbo" address="zookeeper://${dubbo.registry.test}"/>
+    <!--生产环境注册中心-->
+    <dubbo:registry id="product-dubbo" address="zookeeper://${dubbo.registry.product}"/>
+
+    <!--生成远程服务代理，可以和本地bean一样使用helloService-->
+    <dubbo:reference registry="${dubbo.registryId}" id="cacheService" interface="com.lnson.simple.projname.caching.service.CacheService" protocol="${dubbo.protocol}" timeout="${dubbo.timeout}" />
+    <dubbo:reference registry="${dubbo.registryId}" id="shardedJedisService" interface="com.lnson.simple.projname.caching.service.ShardedJedisService" protocol="${dubbo.protocol}" timeout="${dubbo.timeout}" />
+    <dubbo:reference registry="${dubbo.registryId}" id="ebBrandService" interface="com.lnson.simple.projname.service.EbBrandService" protocol="${dubbo.protocol}" timeout="${dubbo.timeout}"/>
+
+</beans>
